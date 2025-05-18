@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #FFF8DC;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  width: 30vh;
+  height: 50vh;
+  background-color: #FFF8DC;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5%;
+  flex-direction: column;
+  border: 3px solid #DAA520;
+}
+
+h1 {
+  color: #DAA520;
+  font-family: serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 10px;
+}
+
+.catsContainer {
+  border: 3px solid #FFC512;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catsContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.catsContainer img:first-child {
+  display: block;
+}
+
+.finalCats {
+  display: none;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.finalCats .catsContainer {
+  width: 400px;
+  height: 400px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttonYes,
+.buttonNo,
+.buttonRetry {
+  width: 75px;
+  height: 40px;
+  background-color: #FFC512;
+  color: #5C452B;
+  border: 3px solid #DAA520;
+  border-radius: 5%;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buttonYes:hover,
+.buttonNo:hover,
+.buttonRetry:hover {
+  background-color: #DAA520;
+  color: #FFF8DC;
+}
+
+.buttonRetry {
+  display: none;
+}
